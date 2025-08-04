@@ -4,7 +4,7 @@ require_once('connect.php');
 
 function loginuser($email,$password){
     $bdd = connect();
-    if(isset($email,$password));
+    if(isset($email,$password)){
         $request = $bdd->prepare('SELECT * FROM user WHERE email = :email');
         $request->execute([
             'email' => $email
@@ -16,6 +16,7 @@ function loginuser($email,$password){
     }else{
         return "Email ou Mot de passe incorrect";
     }
+}
 }
 
 
