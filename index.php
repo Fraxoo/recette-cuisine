@@ -70,9 +70,9 @@ function get_recette($id) {
 
 <body>
     <header>
-        <a href="profil.php">Mon profil</a>
+        <a href="compte.php">Mon profil</a>
         <a href="login.php">Se connecter</a>
-        <a href="inscription.php">Créer un compte</a>
+        <a href="register.php">Créer un compte</a>
         <a href="logout.php">Se déconnecter</a>
     </header>
     <main>
